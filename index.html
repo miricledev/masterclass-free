@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimba English - Masterclass de Inglés de Negocios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffeef8 0%, #ffffff 50%, #f8e8f5 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(255, 20, 147, 0.3);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hero-title {
+            font-size: 2.8rem;
+            color: #ff1493;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .video-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(255, 20, 147, 0.15);
+            margin: 2rem auto;
+            max-width: 900px;
+            border: 2px solid #ffb6c1;
+        }
+
+        .video-title {
+            font-size: 2rem;
+            color: #ff1493;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #ffffff, #ffeef8);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(255, 20, 147, 0.1);
+            border: 1px solid #ffb6c1;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            color: #ff1493;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #ff1493, #ff69b4);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.3);
+        }
+
+        .cta-title {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .cta-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-description {
+                font-size: 1.1rem;
+            }
+            
+            .video-section {
+                padding: 2rem 1rem;
+            }
+            
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo pulse-animation">CHIMBA ENGLISH</div>
+        <div class="subtitle">Tu camino al éxito profesional en inglés</div>
+    </header>
+
+    <div class="container">
+        <section class="hero-section">
+            <h1 class="hero-title">Masterclass Gratuita</h1>
+            <p class="hero-description">
+                Aprende los fundamentos del inglés de negocios que necesitas para destacar en tu carrera profesional. 
+                Esta masterclass exclusiva te dará las herramientas esenciales para comunicarte con confianza en el mundo empresarial.
+            </p>
+        </section>
+
+        <section class="video-section">
+            <h2 class="video-title"><i class="fa-solid fa-bullseye" aria-hidden="true"></i> Inglés de Negocios: Fundamentos Esenciales</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/9JBwJ6iyKf8?modestbranding=1&showinfo=0&rel=0&controls=1&disablekb=1&fs=0&iv_load_policy=3"
+                    title="Masterclass de Inglés de Negocios"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
+                <h3 class="feature-title">Vocabulario Empresarial</h3>
+                <p class="feature-description">
+                    Domina las palabras y frases más importantes del mundo de los negocios que te abrirán puertas profesionales.
+                </p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+                <h3 class="feature-title">Comunicación Efectiva</h3>
+                <p class="feature-description">
+                    Aprende a expresarte con claridad y profesionalismo en reuniones, presentaciones y negociaciones.
+                </p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                <h3 class="feature-title">Emails Profesionales</h3>
+                <p class="feature-description">
+                    Escribe correos electrónicos que impresionen y comuniquen tus ideas de manera clara y persuasiva.
+                </p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2 class="cta-title">¡Comienza Tu Transformación Profesional Hoy!</h2>
+            <p class="cta-description">
+                Esta masterclass gratuita es tu primer paso hacia el dominio del inglés de negocios. 
+                No pierdas esta oportunidad única de impulsar tu carrera.
+            </p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Chimba English. Todos los derechos reservados.</p>
+        <p>Transformando carreras a través del inglés de negocios</p>
+    </footer>
+
+    <script>
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for better UX
+            const videoSection = document.querySelector('.video-section');
+            
+            // Add intersection observer for animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            // Initialize feature cards with fade-in effect
+            const featureCards = document.querySelectorAll('.feature-card');
+            featureCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                card.style.transitionDelay = `${index * 0.2}s`;
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
